@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LoginPage.css">
+    <link rel="stylesheet" href="/Public/LoginPage.css">
     <title>Document</title>
 </head>
 <body>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="/Signup" method="post">
 			<h1>Create Account</h1>
 			
 			<div class="inputbox">
                 <div>Email</div>
-                <input type="email"/>
+                <input type="email" name="email"/>
             </div>
             <div>
                 <div>Username</div>
-                <input type="text"/>
+                <input type="text" name="username"/>
             </div>
 			<div>
                 <div>Password</div>
-                <input type="password"/>
+                <input type="password" name="password"/>
             </div>
-			<button>Sign Up</button>
+			<button type="submit">Sign Up</button>
 		</form>
 	</div>
+	
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="/Login" method="post">
 			<h1>Login</h1>
 			<div>
                 <div class="inputbox">Username</div>
-                <input type="text"/>
+                <input type="text"  name="lusername"/>
             </div>
 			<div>
                 <div>Password</div>
-                <input type="password"/>
+                <input type="password"  name="lpassword"/>
             </div>
 			<button>Login</button>
 		</form>
@@ -55,6 +56,6 @@
 		</div>
 	</div>
 </div>
-<script src="LoginPage.js"></script>
+<script src="/Public/LoginPage.js"></script>
 </body>
 </html>
