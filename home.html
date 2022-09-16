@@ -1,0 +1,82 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .hero {
+        background-color: #1d2026;
+        min-height: 100vh;
+        width: 100%;
+        color: #fff;
+        position: relative;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        padding: 20px 8%;
+      }
+      nav .menu-img {
+        width: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      nav .logo {
+        width: 160px;
+        cursor: pointer;
+      }
+      nav ul {
+        flex: 1;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      button {
+        background: #efefef;
+        height: 30px;
+        width: 60px;
+        border-radius: 20px;
+        border: 0px;
+        outline: 0;
+        cursor: pointer;
+      }
+      button span {
+        display: block;
+        background: #999;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        margin-left: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="menu.png" class="menu-img" />
+        <img src="logo.png" alt="" class="logo" />
+        <ul>
+          <li><a href="">Latest</a></li>
+          <li><a href="">Modern</a></li>
+          <li><a href="">Contemporary</a></li>
+          <li><a href="">Affordable</a></li>
+        </ul>
+        <button type="button"><span></span></button>
+      </nav>
+    </div>
+  </body>
+</html>
