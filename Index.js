@@ -16,6 +16,9 @@ app.get("/LandingPage.html", (req, res) => {
 app.get("/LoginPage.html", (req, res) => {
   res.sendFile(path.join(__dirname, "LoginPage.html"));
 });
+app.get("/home.html.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "home.html.html"));
+});
 
 app.post("/Signup", async (req, res) => {
   try {
@@ -37,7 +40,7 @@ app.post("/Login", async (req, res) => {
 
     let check = await Data.Signup.findOne({ username: lusername });
     if (check.password === lpassword) {
-      res.sendFile(path.join(__dirname, "HomePage.html"));
+      res.sendFile(path.join(__dirname, "home.html"));
     } else {
       res.sendFile(path.join(__dirname, "LoginPage.html"));
     }
